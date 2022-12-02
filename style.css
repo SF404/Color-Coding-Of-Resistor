@@ -26,18 +26,34 @@ body {
     font-size: 35px;
 }
 
+.display {
+    letter-spacing: 1px;
+    align-self: flex-start;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: mintcream;
+    text-shadow: 1px 1px 12px rgb(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 1000px) {
-    .resistor{
+    .resistor {
         font-size: 30px;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .resistor{
+    .resistor {
         font-size: 20px;
     }
-    .display{
-        font-size: 1em;
+
+    .colorPallete {
+        font-size: 14px;
     }
+
+    .display , .result{
+        font-size: 14px;
+    }
+
 }
 
 .wire {
@@ -83,20 +99,16 @@ body {
     visibility: hidden;
 }
 
-.display {
-    letter-spacing: 1px;
-    line-height: 2.5em;
-    align-self: flex-start;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: mintcream;
-    text-shadow: 1px 1px 12px rgb(0, 0, 0, 0.5);
-}
 
 .result {
-    color: honeydew;
-    border-bottom: 1px solid white;
-    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+    padding: 0.5em;
+    letter-spacing: 1px;
+    text-align: center;
+    color: indigo;
+    outline: none;
+    border: none;
+    border-radius: 0.25em;
 }
 
 .colorPallete {
@@ -109,7 +121,6 @@ body {
     border-radius: 0.6em;
     margin: 1em 0;
     padding: 0.5em;
-
 }
 
 .button {
@@ -122,11 +133,13 @@ body {
     border: 0.3em solid lightslategray;
     font-size: 1.2em;
     cursor: pointer;
-    transition:all 0.1s ease-in;
+    transition: all 0.1s ease-in;
 }
-.button:hover{
+
+.button:hover {
     border-color: rgb(84, 108, 133);
 }
-.button:active{
+
+.button:active {
     transform: scale(1.05);
 }
