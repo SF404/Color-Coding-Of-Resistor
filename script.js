@@ -49,5 +49,10 @@ function myFunction(e) {
         bands[cb++].style.backgroundColor = colors[selectedColor];
         resistance = resistance + sign + tolerance[selectedColor] + "%";
     }
+    else {
+        if(confirm('Reset all color Bands?')){
+            window.location.reload();  
+        }
+    }
     result.innerHTML = resistance;
 }
