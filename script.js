@@ -25,6 +25,7 @@ createColorpallete();
 // ----------------------
 let cb = 0;
 container.addEventListener('click', myFunction);
+
 function myFunction(e) {
     if (e.target !== e.currentTarget)
         console.log(e.target.value);
@@ -49,5 +50,4 @@ function myFunction(e) {
         resistance = resistance + sign + tolerance[selectedColor] + "%";
     }
     result.innerHTML = resistance;
-
 }
